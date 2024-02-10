@@ -1,5 +1,7 @@
 # Build times with different options
 
+It is measured on private project (not mine), which I can not share unfortunately. But it was not optimized in terms of build time itself (for example, some includes may have been in headers, when they should have been only in cpp and some class forward declared in header). It also did not use modules.
+
 | compiler      | Linker | Generator | Unity build | precompiled header | ccache | first time (s) | second time (s) |  difference |
 | :---          | :----: |   :----:  |   :----:    |       :----:       | :----: |     :----:     |      :----:     |    :----:   |
 | clang++       |   ld   |   Make    |      -      |          -         |    -   |       84       |        81       |       -     |
@@ -191,3 +193,10 @@ Also see [link](https://www.reddit.com/r/cpp/comments/hj66pd/c_is_too_slow_to_co
 #### other
 
 One also can use ninjatracing [link](https://github.com/nico/ninjatracing) to examine build time.
+
+## TODO
+
+benchmark c++ modules
+benchmark on public project
+use latest compilers and specify their versions
+
